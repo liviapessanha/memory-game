@@ -1,8 +1,12 @@
 "use client"
 import * as C from '@/ComponentsStyles.styles';
+import { Button } from '@/components/Button';
 import { InfoItem } from '@/components/InfoItem';
 
 const Page = () => {
+    const resetAndCreateGrid = () => {
+
+    }
   return (
     <C.Container>
         <C.Info>
@@ -15,7 +19,7 @@ const Page = () => {
                 <InfoItem label="Movimentos" value="0" />
             </C.InfoArea>
 
-            <button>Reiniciar</button>
+            <Button label="Reiniciar" icon="/assets/svgs/restart.svg" onClick={resetAndCreateGrid} />
         </C.Info>
         <C.GridArea>
             ...
